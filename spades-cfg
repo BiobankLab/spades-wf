@@ -1,0 +1,28 @@
+#config file for spades workflow version: 0.0.1
+#
+#triming short reads, shorter and equal reads then specified in flag value will be trimed.
+#If do not whish to cut of comment flag
+#
+#min_length:500
+#
+#flags used by spades insert each flag in one line with its value separated by ':'
+#-flag_name:value
+#--flag2_mane:value_2
+#-k:21,23,25
+#
+#
+#Output dir folder where folder for each sample will be created
+#output:
+#
+#PATH_TO_SPADES:/path/to/spades/
+#
+#Samples
+#put each sample in separate line starting with Sample:
+#neft element is sample name
+#then after coma put type o samples (pe) pair ended or (s) single ended
+#then after coma put files 
+#if pe specified assumed file order is pe1-1, pe1-2
+#Examples:
+#
+#Sample:Name,pe,file_a_pe1-1.fasta, file_a_pe1-2.fasta, file_b_pe1-1.fasta file_b_pe1-2.faste
+#Sample:Name,s,file_a, file_b, file_c
